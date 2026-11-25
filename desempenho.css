@@ -1,0 +1,36 @@
+.desempenho-panel { min-width: 0; }
+.desempenho-scope { margin-bottom: 18px; }
+.desempenho-summary { display: flex; align-items: center; gap: 24px; }
+.desempenho-result { display: flex; align-items: baseline; gap: 7px; flex-shrink: 0; color: #805b0b; }
+.desempenho-value { font-size: 38px; line-height: 1.1; font-weight: 900; }
+.desempenho-scale { font-size: 16px; font-weight: 700; }
+.desempenho-explanation { color: #624d40; font-size: 14px; line-height: 1.7; }
+.desempenho-detail { color: #765e4d; font-size: 13px; margin-top: 3px; }
+.desempenho-meter { height: 9px; overflow: hidden; border-radius: 7px; background: #f1e6d3; margin-top: 18px; }
+.desempenho-meter > span { height: 100%; display: block; border-radius: inherit; background: #c68c26; }
+.desempenho-list { margin: 20px 0 0; padding: 0; list-style: none; }
+.desempenho-task { display: flex; align-items: center; gap: 13px; padding: 15px 0; min-width: 0; }
+.desempenho-task + .desempenho-task { border-top: 1px solid #eadfcf; }
+.desempenho-face { width: 54px; height: 54px; flex-shrink: 0; }
+.desempenho-task-copy { min-width: 0; flex: 1; }
+.desempenho-task-copy h3 { font-size: 15px; line-height: 1.5; overflow-wrap: anywhere; color: #624d40; }
+.desempenho-task-copy p { margin-top: 4px; font-size: 13px; line-height: 1.6; color: #765e4d; }
+.desempenho-task-copy .desempenho-task-status { color: #624d40; }
+.desempenho-task-score { display: flex; align-items: center; gap: 9px; flex-shrink: 0; color: #805b0b; }
+.desempenho-task-score strong { font-size: 14px; white-space: nowrap; }
+.desempenho-stars { display: inline-flex; gap: 3px; }
+.desempenho-stars .star { width: 21px; height: 21px; color: #927a4f; }
+.desempenho-stars .star.on { color: #ba7b12; }
+.desempenho-empty { padding: 16px 0 4px; color: #765e4d; font-size: 14px; line-height: 1.8; }
+@media(max-width:800px) {
+  .desempenho-task { flex-wrap: wrap; }
+  .desempenho-task-score { margin-left: 67px; flex-basis: calc(100% - 67px); }
+}
+@media(max-width:640px) {
+  .desempenho-summary { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .desempenho-value { font-size: 34px; }
+  .desempenho-face { width: 46px; height: 46px; }
+  .desempenho-task { gap: 11px; }
+  .desempenho-task-score { margin-left: 57px; flex-basis: calc(100% - 57px); }
+  .desempenho-stars .star { width: 23px; height: 23px; }
+}

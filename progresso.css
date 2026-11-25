@@ -1,0 +1,39 @@
+/* O indicador representa o dia inteiro, inclusive com filtro por período. */
+.daily-stars { display: inline-flex; }
+.star-pot .pot-stars { gap: 7px; }
+.star-pot .pot-stars .star { width: 23px; height: 23px; }
+.star-pot .star:not(.on), .cel-stars-row .star:not(.on) { color: #927a4f; fill: none; }
+.star-pot .star:not(.on) use, .cel-stars-row .star:not(.on) use { fill: none; }
+.pot-text .daily-hint { display: block; margin-top: 3px; font-weight: 600; }
+.hello-mascot { width: 64px; height: 64px; flex-shrink: 0; }
+.hello { max-width: 440px; }
+#regra-premio { margin-bottom: 16px; }
+@media(max-width:640px) { .hello-mascot { width: 58px; height: 58px; } }
+
+.reward-choices { margin: 18px 0; padding: 16px; border: 2px solid #e8d9c5; border-radius: 15px; }
+.reward-choices legend { font-weight: 800; padding: 0 6px; color: #705035; }
+.reward-task-choice { display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 10px 4px; cursor: pointer; text-align: left; }
+.reward-task-choice + .reward-task-choice { border-top: 1px solid #eee5d9; }
+.reward-task-choice input { width: 22px; height: 22px; flex-shrink: 0; accent-color: #a65519; }
+.reward-task-choice strong, .reward-task-choice small { display: block; }
+.reward-task-choice strong { font-size: 15px; }
+.reward-task-choice small { font-size: 13px; color: #765e4d; margin-top: 3px; }
+.reward-chip { color: #805b0b; background: #fff3cd; }
+
+/* Cinco estrelas em cada atividade; a criança escolhe quando continuar. */
+.activity-score { display:flex; align-items:center; gap:9px; border-radius:12px; padding:9px; background:#fff9e8; border:1px solid #eddfb8; }
+.activity-mascot { width:48px; height:48px; flex-shrink:0; }
+.activity-score>div { min-width:0; }
+.activity-stars { display:inline-flex; vertical-align:middle; }
+.activity-stars-row { display:flex; gap:3px; }
+.activity-stars-row .star { width:18px; height:18px; color:#927a4f; }
+.activity-stars-row .star.on { color:#b67900; }
+.activity-score-value { display:inline-block; font-size:12px; margin-left:6px; color:#72531d; }
+.activity-score-hint { font-size:12px; line-height:1.5; margin-top:5px; color:#72531d; }
+.task-card.done.partial .task-name { color:var(--tinta); }
+.task-card.done.partial .task-icon { background:#fff9e8; }
+.trail-dot.done.partial { background:#d7c9a7; }
+.continuation-actions { display:flex; justify-content:center; gap:14px; margin-top:20px; }
+.continuation-actions[hidden] { display:none; }
+.continuation-actions button { min-width:100px; min-height:48px; font-size:17px; }
+@media(max-width:640px) { .activity-score-hint { font-size:14px; } .activity-stars-row .star { width:22px; height:22px; } }
